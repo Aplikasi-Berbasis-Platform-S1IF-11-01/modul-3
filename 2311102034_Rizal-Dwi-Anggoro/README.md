@@ -32,6 +32,11 @@
 ---
 
 ### DASAR TEORI :
+Cascading Style Sheets (CSS) merupakan bahasa yang digunakan untuk mengatur tampilan dan desain dari halaman web yang dibuat menggunakan HTML. Dengan menggunakan CSS, pengembang web dapat mengontrol berbagai aspek tampilan seperti warna, ukuran teks, posisi elemen, hingga tata letak halaman sehingga tampilan website menjadi lebih menarik dan terstruktur. CSS bekerja dengan cara mendeskripsikan bagaimana suatu elemen HTML akan ditampilkan pada browser. Struktur penulisan CSS umumnya terdiri dari selector dan declaration block, dimana selector digunakan untuk memilih elemen HTML yang akan diberi gaya, sedangkan declaration berisi properti dan nilai yang menentukan tampilan dari elemen tersebut. 
+
+Dalam penggunaannya, CSS dapat disisipkan ke dalam dokumen HTML melalui tiga cara yaitu inline CSS, internal CSS, dan external CSS. Inline CSS dituliskan langsung pada atribut style di dalam tag HTML dan biasanya digunakan untuk mengatur tampilan pada satu elemen saja. Internal CSS dituliskan di dalam tag <style> yang berada pada bagian <head> dari dokumen HTML dan biasanya digunakan ketika halaman membutuhkan pengaturan style khusus. Sedangkan external CSS merupakan cara yang paling umum digunakan karena kode CSS disimpan pada file terpisah dengan ekstensi .css yang kemudian dipanggil pada halaman HTML menggunakan tag <link>. Dengan cara ini, pengelolaan desain website menjadi lebih mudah karena satu file CSS dapat digunakan oleh banyak halaman HTML. 
+
+Selain itu, CSS juga menyediakan berbagai properti untuk mengatur tampilan teks dan elemen lainnya pada halaman web. Beberapa properti yang sering digunakan antara lain font-family untuk menentukan jenis huruf, font-size untuk mengatur ukuran teks, font-style untuk mengubah gaya huruf seperti italic, serta font-weight untuk membuat teks menjadi tebal. Pengaturan tampilan teks ini sangat penting karena dapat meningkatkan keterbacaan dan estetika halaman web sehingga lebih nyaman dilihat oleh pengguna.
 
 
 ### UNGUIDED : 
