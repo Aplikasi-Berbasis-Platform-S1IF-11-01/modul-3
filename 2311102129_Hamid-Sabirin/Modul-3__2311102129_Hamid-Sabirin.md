@@ -13,8 +13,8 @@
   <h3>Disusun Oleh :</h3>
   <p>
     <strong>HAMID SABIRIN</strong><br>
-    2311102129<br>
-    S1 IF-11-REG01
+    <strong>2311102129</strong><br>
+    <strong>S1 IF-11-REG01</strong>
   </p>
   <br />
   <br />
