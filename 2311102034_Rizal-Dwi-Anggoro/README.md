@@ -43,6 +43,7 @@ Selain itu, CSS juga menyediakan berbagai properti untuk mengatur tampilan teks 
 
 **Code :**
 ![Screenshot Git](assets/Code.png)
+![Screenshot Git](assets/ucapan%20hari%20imlek.png)
 
 **Penjelasan :**
 
