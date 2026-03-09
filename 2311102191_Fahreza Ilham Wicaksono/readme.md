@@ -274,6 +274,10 @@ Span merupakan elemen HTML yang dapat menangani perubahan konten elemen pada sat
 <!DOCTYPE html>
 <html lang="id">
 
+<!-- 2311102191 -->
+<!-- FAHREZA ILHAM WICAKSONO -->
+<!-- 👍🏿 -->
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -354,6 +358,10 @@ Pada halaman ini digunakan dua library tambahan yang hanya berfungsi untuk menye
 ##### CSS
 
 ```css
+/* 2311102191 */
+/* FAHREZA ILHAM WICAKSONO */
+/* 👍🏿 */
+
 /* Variabel warna */
 :root {
     --red-1: #b71c1c;
