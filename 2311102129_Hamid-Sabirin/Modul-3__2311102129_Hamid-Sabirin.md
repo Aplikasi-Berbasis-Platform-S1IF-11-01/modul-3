@@ -13,10 +13,9 @@
   <h3>Disusun Oleh :</h3>
   <p>
     <strong>HAMID SABIRIN</strong><br>
-    2311102129<br>
-    S1 IF-11-REG01
+    <strong>2311102129</strong><br>
+    <strong>S1 IF-11-REG01</strong>
   </p>
-  <br />
   <br />
   <h3>Dosen Pengampu :</h3>
   <p>
@@ -24,8 +23,12 @@
   </p>
   <br />
   <br />
+    <h4>Asisten Praktikum :</h4>
+    <strong> Apri Pandu Wicaksono </strong> <br>
+    <strong>Rangga Pradarrell Fathi</strong>
   <br />
-  <h3>PROGRAM STUDI S1 INFORMATIKA <br>FAKULTAS INFORMATIKA <br>UNIVERSITAS TELKOM PURWOKERTO <br>2025/2026</h3>
+  <h3>LABORATORIUM HIGH PERFORMANCE
+ <br>FAKULTAS INFORMATIKA <br>UNIVERSITAS TELKOM PURWOKERTO <br>2026</h3>
 </div>
 
 ---
