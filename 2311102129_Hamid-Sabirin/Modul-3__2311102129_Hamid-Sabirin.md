@@ -5,7 +5,7 @@
   <h3>MODUL 3 <br> CSS - CASCADING STYLE SHEET</h3>
   <br />
   <br />
-  <img src="assets/logo.jpeg" alt="Logo" width="300"> 
+  <img src="../Modul_1/assets/logo.jpeg" alt="Logo" width="300"> 
   <br />
   <br />
   <br />
@@ -13,9 +13,10 @@
   <h3>Disusun Oleh :</h3>
   <p>
     <strong>HAMID SABIRIN</strong><br>
-    <strong>2311102129</strong><br>
-    <strong>S1 IF-11-REG01</strong>
+    2311102129<br>
+    S1 IF-11-REG01
   </p>
+  <br />
   <br />
   <h3>Dosen Pengampu :</h3>
   <p>
@@ -23,12 +24,8 @@
   </p>
   <br />
   <br />
-    <h4>Asisten Praktikum :</h4>
-    <strong> Apri Pandu Wicaksono </strong> <br>
-    <strong>Rangga Pradarrell Fathi</strong>
   <br />
-  <h3>LABORATORIUM HIGH PERFORMANCE
- <br>FAKULTAS INFORMATIKA <br>UNIVERSITAS TELKOM PURWOKERTO <br>2026</h3>
+  <h3>PROGRAM STUDI S1 INFORMATIKA <br>FAKULTAS INFORMATIKA <br>UNIVERSITAS TELKOM PURWOKERTO <br>2025/2026</h3>
 </div>
 
 ---
@@ -239,4 +236,6 @@ body {
 - Pada baris **10-12**, properti `display: flex; justify-content: center; align-items: center;` diaplikasikan di dalam *class* elemen `body`. Hal ini berguna secara otomatis memposisikan porsi struktur tag tata letak web simetris di tengah layar sumbu (baik vertikal maupun horizontal).
 - Pada baris **23-24**, properti pewarnaan visual pendukung `background: linear-gradient()` dipanggil guna memberikan efek gradasi halus rentang transisi warna campuran kemerahan. Sedangkan sintaks `border-radius: 20px` mengatur tingkat proporsi lengkungan membulat di keempat sudut kontainer kartu utama antarmuka komponen.
 - Pada baris **34-57**, penambahan penugasan pseudo-elemen CSS `::before` & `::after` secara manual digunakan untuk memberikan slot fungsi injeksi ornamen estetik bingkai kuning pada area pinggir luar komponen `.card`. Ini dikendalikan khusus tanpa perlu campur tangan di dalam baris file HTML (*markup HTML tetap clean tanpa serakan span kosong*).
--
+
+## Refrensi
+- [Materi Modul 3](https://drive.google.com/file/d/1kd7ogQkR_rsNCnKDcJDmavY8FiOyTLzs/view?usp=sharing)
