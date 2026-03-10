@@ -62,7 +62,7 @@ Seiring perkembangannya CSS modern kini telah mendukung pembuatan antarmuka yang
 Berikut adalah kode nya:
 
 ```html
-<!-- 2311102095 - Aisyah Anis Mazaya - Modul_3 -->
+<!--- 2311102095 - Aisyah Anis Mazaya - Modul_3 --->
 
 <!DOCTYPE html>
 <html lang="id">
