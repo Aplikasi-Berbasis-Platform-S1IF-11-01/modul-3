@@ -1,0 +1,132 @@
+<!-- 2311102095 - Aisyah Anis Mazaya - Modul_3 -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perayaan Tahun Baru Imlek</title>
+    <style>
+        /* Dasar Halaman */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #8B0000; /* Dark Red */
+            color: #D4AF37; /* Metallic Gold */
+            font-family: "Georgia", serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Container Utama */
+        .container {
+            text-align: center;
+            border: 4px double #D4AF37;
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.3);
+            position: relative;
+            max-width: 600px;
+            z-index: 1;
+        }
+
+        /* Ornamen Lampion Modern dengan CSS */
+        .lantern {
+            width: 60px;
+            height: 50px;
+            background-color: #FF0000;
+            border: 2px solid #D4AF37;
+            border-radius: 15px;
+            margin: 0 auto 20px;
+            position: relative;
+            animation: swing 3s ease-in-out infinite;
+            transform-origin: top center;
+        }
+
+        .lantern::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 15px;
+            background-color: #D4AF37;
+        }
+
+        .lantern::after {
+            content: "福";
+            font-size: 24px;
+            line-height: 50px;
+            color: #D4AF37;
+            font-weight: bold;
+        }
+
+        /* Animasi Ayunan */
+        @keyframes swing {
+            0% { transform: rotate(-8deg); }
+            50% { transform: rotate(8deg); }
+            100% { transform: rotate(-8deg); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .footer-icon {
+            font-size: 2rem;
+            display: block;
+            margin-top: 20px;
+        }
+
+        /* Dekorasi Sudut */
+        .corner {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 3px solid #D4AF37;
+        }
+
+        .top-left { top: 10px; left: 10px; border-right: none; border-bottom: none; }
+        .bottom-right { bottom: 10px; right: 10px; border-left: none; border-top: none; }
+
+        /* Efek Cahaya Latar Belakang */
+        .glow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, rgba(139, 0, 0, 0) 70%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glow"></div>
+
+    <div class="container">
+        <div class="corner top-left"></div>
+        <div class="corner bottom-right"></div>
+        
+        <div class="lantern"></div>
+
+        <h1>Gong Xi Fa Cai</h1>
+        <p>Selamat Tahun Baru Imlek.</p>
+        <p>Semoga tahun ini membawa keberuntungan, kesehatan, dan kebahagiaan yang berlimpah untukmu.</p>
+        
+        <span class="footer-icon">♡♡♡</span>
+    </div>
+
+</body>
+</html>
