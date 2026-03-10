@@ -199,7 +199,7 @@ Berikut adalah kode nya:
 ## Tampilan Kode (SS)
 ![Tampilan Program](sstahunimlek.png)
 
-### Penjelasan Kode
+### Penjelasan Kode Program
 
 
 Kode ini mengimplementasikan halaman web statis bertema "Tahun Baru Imlek" dengan memadukan struktur HTML5 dan desain visual melalui CSS. Secara estetika, dokumen ini menggunakan palet warna merah tua (`#8B0000`) dan emas (`#D4AF37`) untuk menghadirkan nuansa tradisional yang mewah. Tata letak utama diatur menggunakan **CSS Flexbox** pada elemen `body` untuk memastikan seluruh konten berada tepat di tengah layar secara responsif.
