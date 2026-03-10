@@ -52,9 +52,9 @@
 
 ## Dasar Teori
 
-CSS (Cascading Style Sheets) merupakan bahasa desain yang berfungsi untuk mengatur presentasi visual dari sebuah dokumen web yang disusun menggunakan HTML. Secara filosofis, CSS memisahkan antara struktur konten (apa yang ditampilkan) dengan gaya tampilan (bagaimana cara menampilkannya), sehingga pengelolaan estetika seperti tata letak, warna, tipografi, hingga animasi dapat dilakukan secara terpusat. Dengan menggunakan sistem selektor, CSS mampu memberikan instruksi spesifik pada elemen tertentu agar tampil sesuai dengan desain yang diinginkan.
+CSS (Cascading Style Sheets) merupakan bahasa desain yang berfungsi untuk mengatur presentasi visual dari sebuah dokumen web yang disusun menggunakan HTML. Secara filosofis CSS memisahkan antara struktur konten (apa yang ditampilkan) dengan gaya tampilan (bagaimana cara menampilkannya) sehingga pengelolaan estetika seperti tata letak, warna, tipografi, hingga animasi dapat dilakukan secara terpusat. Dengan menggunakan sistem selektor CSS mampu memberikan instruksi spesifik pada elemen tertentu agar tampil sesuai dengan desain yang diinginkan.
 
-Dalam penerapannya, CSS bekerja berdasarkan konsep Box Model, di mana setiap elemen dianggap sebagai sebuah kotak yang memiliki properti margin, border, padding, dan content. Selain aspek statis, CSS modern juga memungkinkan pembuatan antarmuka yang dinamis melalui fitur Flexbox dan Grid untuk pengaturan tata letak yang responsif, serta Keyframes untuk keperluan animasi. Hal ini memungkinkan pengembang web menciptakan pengalaman pengguna yang interaktif dan visual yang menarik tanpa harus bergantung pada skrip tambahan atau pustaka eksternal.
+Dalam penerapannya CSS bekerja berdasarkan konsep Box Model, di mana setiap elemen dianggap sebagai sebuah kotak yang memiliki properti margin, border, padding, dan content. Selain aspek statis CSS modern juga memungkinkan pembuatan antarmuka yang dinamis melalui fitur Flexbox dan Grid untuk pengaturan tata letak yang responsif serta Keyframes untuk keperluan animasi. Hal ini memungkinkan pengembang web menciptakan pengalaman pengguna yang interaktif dan visual yang menarik tanpa harus bergantung pada skrip tambahan atau pustaka eksternal.
 
 ## Kode program HTML
 Berikut adalah kode nya:
