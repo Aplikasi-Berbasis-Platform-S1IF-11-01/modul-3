@@ -293,7 +293,8 @@ membuat section untuk beberapa elemen HTML di dalamnya. Tag yang digunakan yaitu
 ![Gambar 9](Images/Gambar9.png)
 
 
-# UNGUIDED (Buat halaman untuk merayakan imlek ("karena bubub gua cina") hanya menggunakan css tanpa library dan tanpa js)
+# UNGUIDED 
+Buat halaman untuk merayakan imlek ("karena bubub gua cina") hanya menggunakan css tanpa library dan tanpa js.
 ```
 //2311102316
 //Boutefhika Nuha Ziyadatul khair
