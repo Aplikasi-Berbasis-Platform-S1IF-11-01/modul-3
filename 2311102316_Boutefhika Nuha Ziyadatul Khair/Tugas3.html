@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selamat Imlek 2026</title>
+
+<style>
+
+:root{
+--red:#c4001d;
+--darkred:#7a0000;
+--gold:#ffd700;
+--light:#fff6e0;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:linear-gradient(180deg,var(--red),var(--darkred));
+font-family: serif;
+color:var(--light);
+min-height:100vh;
+overflow:hidden;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+/* lantern */
+
+.lanterns{
+position:absolute;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-around;
+padding-top:20px;
+}
+
+.lantern{
+animation:swing 4s ease-in-out infinite;
+}
+
+.lantern-body{
+width:40px;
+height:55px;
+background:radial-gradient(circle at 40% 30%,#ff7a00,#b30000);
+border-radius:50%;
+border:3px solid var(--gold);
+box-shadow:0 0 20px orange;
+}
+
+.lantern-string{
+width:2px;
+height:40px;
+background:var(--gold);
+margin:auto;
+}
+
+@keyframes swing{
+0%,100%{transform:rotate(-8deg)}
+50%{transform:rotate(8deg)}
+}
+
+/* fireworks */
+
+.firework{
+position:absolute;
+width:6px;
+height:6px;
+background:var(--gold);
+border-radius:50%;
+animation:boom 3s infinite;
+}
+
+.firework:nth-child(1){top:20%;left:20%;animation-delay:0s}
+.firework:nth-child(2){top:10%;left:80%;animation-delay:1s}
+.firework:nth-child(3){top:30%;left:50%;animation-delay:2s}
+
+@keyframes boom{
+0%{opacity:0;transform:scale(0)}
+40%{opacity:1;box-shadow:0 0 10px 5px var(--gold)}
+100%{opacity:0;transform:scale(3)}
+}
+
+/* title */
+
+h1{
+font-size:60px;
+color:var(--gold);
+text-shadow:0 0 15px gold;
+}
+
+h2{
+font-size:48px;
+margin-top:10px;
+}
+
+.subtitle{
+margin-top:10px;
+letter-spacing:3px;
+}
+
+/* blessing */
+
+.blessing{
+margin-top:30px;
+max-width:500px;
+line-height:1.8;
+font-size:18px;
+}
+
+/* footer */
+
+footer{
+position:absolute;
+bottom:30px;
+text-align:center;
+}
+
+.footer-cn{
+font-size:36px;
+color:var(--gold);
+text-shadow:0 0 20px gold;
+}
+
+.footer-id{
+font-size:14px;
+letter-spacing:2px;
+margin-top:5px;
+}
+
+/* lucky coins */
+
+.coins{
+position:absolute;
+bottom:100px;
+display:flex;
+gap:15px;
+}
+
+.coin{
+width:50px;
+height:50px;
+border-radius:50%;
+background:radial-gradient(circle at 40% 30%,#ffe680,var(--gold));
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+color:#900;
+animation:spin 3s linear infinite;
+}
+
+@keyframes spin{
+from{transform:rotate(0)}
+to{transform:rotate(360deg)}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- lanterns -->
+<div class="lanterns">
+<div class="lantern">
+<div class="lantern-string"></div>
+<div class="lantern-body"></div>
+</div>
+
+<div class="lantern">
+<div class="lantern-string"></div>
+<div class="lantern-body"></div>
+</div>
+
+<div class="lantern">
+<div class="lantern-string"></div>
+<div class="lantern-body"></div>
+</div>
+</div>
+
+<!-- fireworks -->
+<div class="firework"></div>
+<div class="firework"></div>
+<div class="firework"></div>
+
+<!-- title -->
+<h1>Selamat Hari Raya</h1>
+<h2>新年快乐</h2>
+<div class="subtitle">IMLEK 2026 · TAHUN KUDA KAYU</div>
+
+<p class="blessing">
+Semoga tahun baru ini membawa rezeki yang melimpah,
+kesehatan, kebahagiaan, dan keberuntungan untuk
+kamu dan keluarga tercinta.
+</p>
+
+<footer>
+<div class="footer-cn">恭喜发财 🧧</div>
+<div class="footer-id">GONG XI FA CAI</div>
+</footer>
+
+</body>
+</html>
