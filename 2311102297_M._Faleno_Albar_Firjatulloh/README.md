@@ -8,7 +8,7 @@
 
 ### CSS – Cascading Style Sheet
 
-<img src="assets/Logo Tel-u.PNG" width="220">
+<img src="assets/Logo Tel-u.PNG" alt="Logo Tel-U" width="220">
 
 ### Disusun Oleh
 
