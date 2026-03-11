@@ -187,9 +187,15 @@ Dalam perancangan antarmuka web, pengaturan warna merupakan salah satu aspek yan
       </div>
 
     </div>
+
+    <div class="footer">
+      IF-11-01 • 2311102040 • Ucapan dari Raihan Ramadhan
+    </div>
+
   </div>
 </body>
 </html>
+
 ```
 
 **Output :**
