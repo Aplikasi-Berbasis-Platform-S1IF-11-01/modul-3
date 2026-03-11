@@ -197,6 +197,7 @@ Dengan ditambahkan CSS pada elemen list, maka list yang ditampilkan dapat lebih 
 | `margin` | Mengatur ruang jarak elemen konten dengan pembatas pada bagian luar |
 
 Contoh penerapannya sebagai berikut:
+
 ![Gambar 6](Images/Gambar6.png)
 
 ```
@@ -508,7 +509,7 @@ kamu dan keluarga tercinta.
 </html>
 ```
 Output:
-![Gambar 10](Images/Tugas3.png)
+![Gambar 10](Images/Imlek.png)
 
 Deskripsi Program:
 Program ini merupakan halaman web ucapan **Selamat Hari Raya Imlek 2026** yang dibuat menggunakan **HTML dan CSS**. HTML digunakan untuk menyusun struktur halaman seperti judul, teks ucapan, lampion, kembang api, dan bagian footer, sedangkan CSS digunakan untuk mengatur tampilan visual seperti warna, tata letak, serta efek animasi. Program ini juga memanfaatkan beberapa fitur CSS seperti **CSS Variable (`:root`) untuk pengaturan warna, Flexbox untuk penataan posisi elemen, Gradien untuk latar belakang, serta `@keyframes` untuk membuat animasi** seperti lampion yang bergoyang, efek kembang api, dan koin keberuntungan yang berputar. Kombinasi elemen tersebut membuat halaman terlihat lebih menarik dan sesuai dengan suasana perayaan Imlek.
