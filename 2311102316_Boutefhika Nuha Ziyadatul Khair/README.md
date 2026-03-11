@@ -1,4 +1,54 @@
+<div align="center">
+  <br />
 
+  <h1>LAPORAN PRAKTIKUM <br>
+  APLIKASI BERBASIS PLATFORM
+  </h1>
+
+  <br />
+
+  <h3>MODUL 4 <br>
+  HTML
+  </h3>
+
+  <br />
+
+  <img width="512" height="512" alt="logo" src="https://github.com/user-attachments/assets/22ae9b17-5e73-48a6-b5dd-281e6c70613e" />
+
+
+
+  <br />
+  <br />
+  <br />
+
+  <h3>Disusun Oleh :</h3>
+
+  <p>
+    <strong>Boutefhika Nuha Ziyadatul Khair</strong><br>
+    <strong>2311102316</strong><br>
+    <strong>S1 IF-11-01</strong>
+  </p>
+
+  <br />
+
+  <h3>Dosen Pengampu :</h3>
+
+  <p>
+    <strong>Dimas Fanny Hebrasianto Permadi, S.ST., M.Kom</strong>
+  </p>
+  
+  <br />
+  <br />
+    <h4>Asisten Praktikum :</h4>
+    <strong>Apri Pandu Wicaksono </strong> <br>
+    <strong>Rangga Pradarrell Fathi</strong>
+  <br />
+
+  <h3>LABORATORIUM HIGH PERFORMANCE
+ <br>FAKULTAS INFORMATIKA <br>UNIVERSITAS TELKOM PURWOKERTO <br>2026</h3>
+</div>
+
+<hr>
 
 
 # Dasar Teori
@@ -173,7 +223,8 @@ Pengaturan alignment pada sebuah teks juga dapat ditangani oleh CSS dengan prope
 | `text-align` | `right` | Membuat teks menjadi rata kanan |
 | `text-align` | `justify` | Membuat paragraf menjadi rata kanan dan kiri |
 
-Contoh penerapannya pada gambar
+Contoh penerapannya pada gambar:
+
 ![Gambar 7](Images/Gambar7.png)
 
 ```
@@ -458,5 +509,6 @@ kamu dan keluarga tercinta.
 ```
 Output:
 ![Gambar 10](Images/Tugas3.png)
+
 Deskripsi Program:
 Program ini merupakan halaman web ucapan **Selamat Hari Raya Imlek 2026** yang dibuat menggunakan **HTML dan CSS**. HTML digunakan untuk menyusun struktur halaman seperti judul, teks ucapan, lampion, kembang api, dan bagian footer, sedangkan CSS digunakan untuk mengatur tampilan visual seperti warna, tata letak, serta efek animasi. Program ini juga memanfaatkan beberapa fitur CSS seperti **CSS Variable (`:root`) untuk pengaturan warna, Flexbox untuk penataan posisi elemen, Gradien untuk latar belakang, serta `@keyframes` untuk membuat animasi** seperti lampion yang bergoyang, efek kembang api, dan koin keberuntungan yang berputar. Kombinasi elemen tersebut membuat halaman terlihat lebih menarik dan sesuai dengan suasana perayaan Imlek.
