@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Selamat Imlek</title>
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: radial-gradient(circle,#8b0000,#3b0000);
+    font-family: "Trebuchet MS", sans-serif;
+    overflow:hidden;
+    color:#ffd700;
+}
+
+/* TEXT */
+.title{
+    text-align:center;
+    z-index:2;
+}
+
+.title h1{
+    font-size:60px;
+    letter-spacing:4px;
+    animation: glow 2s infinite alternate;
+}
+
+.title p{
+    font-size:22px;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px gold;
+    }
+    to{
+        text-shadow:0 0 30px gold,0 0 60px orange;
+    }
+}
+
+/* LANTERN */
+
+.lantern{
+    position:absolute;
+    width:60px;
+    height:80px;
+    background:red;
+    border-radius:30px;
+    border:4px solid gold;
+    top:0;
+    animation:swing 3s infinite ease-in-out;
+}
+
+.lantern::before{
+    content:"";
+    position:absolute;
+    width:4px;
+    height:40px;
+    background:gold;
+    top:-40px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.lantern::after{
+    content:"";
+    position:absolute;
+    width:10px;
+    height:25px;
+    background:gold;
+    bottom:-25px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.l1{ left:10%; animation-delay:0s;}
+.l2{ left:25%; animation-delay:1s;}
+.l3{ right:25%; animation-delay:0.5s;}
+.l4{ right:10%; animation-delay:1.5s;}
+
+@keyframes swing{
+    0%{ transform:rotate(-10deg);}
+    50%{ transform:rotate(10deg);}
+    100%{ transform:rotate(-10deg);}
+}
+
+/* ANGPAO FALLING */
+
+.angpao{
+    position:absolute;
+    width:40px;
+    height:55px;
+    background:#d00000;
+    border:2px solid gold;
+    border-radius:5px;
+    animation:fall linear infinite;
+}
+
+.angpao::before{
+    content:"福";
+    position:absolute;
+    color:gold;
+    font-weight:bold;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+@keyframes fall{
+    from{
+        transform:translateY(-100px) rotate(0deg);
+        opacity:1;
+    }
+    to{
+        transform:translateY(110vh) rotate(360deg);
+        opacity:0.8;
+    }
+}
+
+/* RANDOM ANGPAO POSITIONS */
+
+.a1{left:5%; animation-duration:7s;}
+.a2{left:15%; animation-duration:9s;}
+.a3{left:30%; animation-duration:6s;}
+.a4{left:50%; animation-duration:8s;}
+.a5{left:65%; animation-duration:7s;}
+.a6{left:80%; animation-duration:10s;}
+.a7{left:90%; animation-duration:6s;}
+
+</style>
+</head>
+
+<body>
+
+<div class="title">
+<h1>Gong Xi Fa Cai</h1>
+<p>Selamat Tahun Baru Imlek 🧧</p>
+<p>Semoga Tahun Ini Membawa Keberuntungan & Kebahagiaan</p>
+</div>
+
+<div class="lantern l1"></div>
+<div class="lantern l2"></div>
+<div class="lantern l3"></div>
+<div class="lantern l4"></div>
+
+<div class="angpao a1"></div>
+<div class="angpao a2"></div>
+<div class="angpao a3"></div>
+<div class="angpao a4"></div>
+<div class="angpao a5"></div>
+<div class="angpao a6"></div>
+<div class="angpao a7"></div>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html> /* RIZAL DWI ANGGORO */
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Tahun Baru Imlek</title>
+    <style>
+        :root {
+            --chinese-red: #d32f2f;
+            --gold: #ffd700;
+            --dark-red: #8b0000;
+        }
+                                                                /* RIZAL DWI ANGGORO */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-red);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            color: var(--gold);
+        }
+
+        /* Latar Belakang Pola Awan Tradisional */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at 20px 20px, var(--chinese-red) 2px, transparent 0);
+            background-size: 40px 40px;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        /* Container Utama */
+        .container {
+            text-align: center;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        /* Dekorasi Lampion */
+        .lantern-container {
+            position: absolute;
+            top: -20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .lantern {
+            width: 80px;
+            height: 100px;
+            background: var(--chinese-red);
+            border-radius: 40px / 20px;
+            position: relative;
+            border: 2px solid var(--gold);
+            animation: swing 3s ease-in-out infinite;
+            transform-origin: top center;
+        }
+
+        .lantern::before {
+            content: "福"; /* Karakter Fu (Keberuntungan) */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: var(--gold);
+        }
+
+        .lantern::after {
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            width: 2px;
+            height: 30px;
+            background: var(--gold);
+        }
+                                                            /* RIZAL DWI ANGGORO */
+        /* Animasi */
+        @keyframes swing {
+            0% { transform: rotate(-10deg); }
+            50% { transform: rotate(10deg); }
+            100% { transform: rotate(-10deg); }
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px var(--gold); }
+            to { text-shadow: 0 0 30px #fff, 0 0 10px var(--gold); }
+        }
+
+        /* Angpao Sederhana */
+        .angpao {
+            width: 100px;
+            height: 150px;
+            background: var(--chinese-red);
+            margin: 50px auto;
+            border-radius: 10px;
+            border: 2px solid var(--gold);
+            position: relative;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .angpao:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .angpao-flap {
+            width: 100%;
+            height: 40px;
+            background: var(--dark-red);
+            border-bottom: 2px solid var(--gold);
+            border-radius: 10px 10px 50% 50%;
+        }
+    </style>
+</head>
+<body>
+                                                            /* RIZAL DWI ANGGORO */
+    <div class="lantern-container">
+        <div class="lantern" style="animation-delay: 0s;"></div>
+        <div class="lantern" style="animation-delay: 0.5s;"></div>
+        <div class="lantern" style="animation-delay: 1.2s;"></div>
+        <div class="lantern" style="animation-delay: 0.8s;"></div>
+    </div>
+
+    <div class="container">
+        <h1>Gong Xi Fa Cai</h1>
+        <div class="subtitle">Happy Chinese New Year 2026</div>
+        
+        <div class="angpao">
+            <div class="angpao-flap"></div>
+            <p style="font-size: 0.8rem; margin-top: 40px;">Angpao</p>
+        </div>
+        
+        <p>Semoga kebahagiaan dan kemakmuran menyertai kita semua.</p>
+    </div>
+
+</body>
+</html>
