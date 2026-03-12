@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Selamat Tahun Baru Imlek 2026</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #8B0000; 
+            color: #FFD700; 
+            text-align: center;
+        }
+
+        .banner {
+            padding: 50px 20px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('chinese-pattern.jpg');
+            border-bottom: 5px solid #FFD700;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .sub-text {
+            font-size: 1.5rem;
+            color: #FFF;
+        }
+
+        .lantern-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .lantern {
+            width: 80px;
+            height: 60px;
+            background-color: #FF4500;
+            border-radius: 40px;
+            position: relative;
+            border: 2px solid #FFD700;
+            animation: swing 3s ease-in-out infinite alternate;
+            transform-origin: top center;
+        }
+
+        @keyframes swing {
+            from { transform: rotate(-10deg); }
+            to { transform: rotate(10deg); }
+        }
+
+        .lantern::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background: #FFD700;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #AA0000;
+            padding: 30px;
+            border: 2px solid #FFD700;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        .chinese-char {
+            font-size: 5rem;
+            margin: 20px 0;
+            display: block;
+        }
+
+        .grid-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #FFD700;
+            color: #8B0000;
+            padding: 20px;
+            width: 200px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #222;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lantern-container">
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+    </div>
+
+    <div class="banner">
+        <h1>Gong Xi Fa Cai</h1>
+        <p class="sub-text">Selamat Tahun Baru Imlek 2026 - Tahun Kuda Api</p>
+    </div>
+
+    <div class="content">
+        <span class="chinese-char">福</span> <h2>Semoga Kebahagiaan Menyertai Kita</h2>
+        <p>Di tahun baru ini, mari kita rayakan kebersamaan dengan penuh cinta, kedamaian, dan kemakmuran bagi kita semua.</p>
+
+        <div class="grid-container">
+            <div class="card">Kemakmuran Berlimpah</div>
+            <div class="card">Kesehatan Selalu</div>
+            <div class="card">Kebahagiaan Keluarga</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Perayaan Imlek Mandiri - Dibuat dengan CSS Murni
+    </footer>
+
+</body>
+</html>
