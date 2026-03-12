@@ -8,27 +8,37 @@
 
 ### CSS – Cascading Style Sheet
 
-<img src="assets/Logo Tel-u.PNG" alt="Logo Tel-U" width="220">
+<br>
+
+<img src="assets/logo.png" alt="logo" width="220">
+
+<br>
 
 ### Disusun Oleh
 
-**M. Faleno Albar Firjatulloh**
-2311102297
-S1 IF-11-01
+**Kanasya Abdi Aziz**  
+2311102140  
+S1 IF-11-01  
+
+<br>
 
 ### Dosen Pengampu
 
 **Dimas Fanny Hebrasianto Permadi, S.ST., M.Kom**
 
+<br>
+
 ### Asisten Praktikum
 
-Apri Pandu Wicaksono
-Rangga Pradarrell Fathi
+Apri Pandu Wicaksono  
+Rangga Pradarrell Fathi  
+
+<br>
 
 ### Laboratorium High Performance
 
-Fakultas Informatika
-Universitas Telkom Purwokerto
+Fakultas Informatika  
+Universitas Telkom Purwokerto  
 2026
 
 </div>
@@ -37,284 +47,242 @@ Universitas Telkom Purwokerto
 
 # 1. Dasar Teori
 
-**CSS (Cascading Style Sheets)** adalah bahasa yang digunakan bersama HTML untuk mengatur tampilan visual pada halaman web.
+**CSS (Cascading Style Sheets)** adalah bahasa yang digunakan bersama dengan HTML untuk mengatur bagaimana tampilan visual halaman web ditampilkan.
 
-Jika **HTML** berfungsi sebagai struktur dasar sebuah halaman, maka **CSS** digunakan untuk mengatur tampilan seperti:
+Jika HTML berfungsi sebagai **struktur utama halaman**, maka CSS digunakan untuk mengatur tampilan seperti:
 
-* Warna
-* Tata letak
-* Ukuran teks
-* Jarak antar elemen
-* Efek visual lainnya
+- warna
+- layout
+- ukuran teks
+- jarak antar elemen
+- serta berbagai efek visual lainnya
 
-CSS bekerja dengan **selector** untuk memilih elemen HTML, kemudian menerapkan aturan gaya berupa berbagai **property** seperti warna, ukuran font, margin, padding, dan lain-lain.
+CSS bekerja menggunakan **selector** untuk memilih elemen HTML, kemudian menerapkan berbagai properti gaya seperti `color`, `font-size`, `margin`, dan `padding`.
 
-Dengan menggunakan CSS, pengembang dapat **memisahkan struktur (HTML) dan tampilan (CSS)** sehingga kode menjadi:
+Dengan memisahkan HTML dan CSS, pengembang dapat membuat kode yang:
 
-* Lebih rapi
-* Mudah dipahami
-* Mudah dikelola
+- lebih terorganisir  
+- lebih mudah dipahami  
+- lebih mudah dikelola dan diperbarui  
 
 ### Cara Menggunakan CSS
 
-Terdapat **tiga metode utama** dalam menerapkan CSS pada HTML:
+Terdapat **tiga cara utama** untuk menggunakan CSS dalam HTML:
 
-1. **Inline CSS**
+1. **Inline CSS**  
    CSS ditulis langsung pada elemen HTML menggunakan atribut `style`.
 
-2. **Internal CSS**
+2. **Internal CSS**  
    CSS ditulis di dalam tag `<style>` pada bagian `<head>`.
 
-3. **External CSS**
-   CSS disimpan pada file terpisah `.css` lalu dihubungkan menggunakan tag `<link>`.
-   Metode ini **paling direkomendasikan** karena membuat kode lebih terstruktur.
+3. **External CSS**  
+   CSS disimpan dalam file `.css` terpisah dan dihubungkan menggunakan tag `<link>`.  
+   Metode ini **paling disarankan** karena membuat struktur kode lebih rapi dan mudah dikelola.
 
 ---
 
 # 2. Penjelasan Kode
 
-## Source Code (`index.html`)
+## Source Code (`tugas3-2311102140.html`)
 
 ```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Idul Fitri - 1447 H</title>
+    <title>Selamat Tahun Baru Imlek 2026</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Poppins:wght@300;400;700&display=swap');
-
         body {
             margin: 0;
             padding: 0;
-            /* Latar belakang hijau gradasi */
-            background: linear-gradient(135deg, #1b4332 0%, #081c15 100%);
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            color: #ffffff;
-        }
-
-        .container {
-            /* Menyesuaikan permintaan: Width 100% */
-            width: 100%;
-            max-width: 600px; /* Opsional: batas maksimal agar teks tidak terlalu melar di monitor besar */
-            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #8B0000; 
+            color: #FFD700; 
             text-align: center;
-            box-sizing: border-box;
         }
 
-        .arabic {
-            font-family: 'Amiri', serif;
-            font-size: clamp(3rem, 10vw, 5rem); /* Ukuran teks adaptif */
-            color: #d4af37;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        .banner {
+            padding: 50px 20px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('chinese-pattern.jpg');
+            border-bottom: 5px solid #FFD700;
         }
 
         h1 {
-            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            font-size: 3.5rem;
             margin: 0;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            text-shadow: 2px 2px 4px #000;
         }
 
-        .subtitle {
-            font-weight: 300;
-            color: #b7e4c7;
-            margin-bottom: 40px;
-        }
-
-        .message {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            line-height: 1.8;
-            font-size: 1.1rem;
-        }
-
-        .highlight {
-            display: block;
-            margin-top: 15px;
-            font-weight: 700;
-            color: #d4af37;
-            font-size: 1.3rem;
-        }
-
-        /* Animasi Bintang Sederhana */
-        .decoration {
-            color: #d4af37;
+        .sub-text {
             font-size: 1.5rem;
+            color: #FFF;
+        }
+
+        .lantern-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .lantern {
+            width: 80px;
+            height: 60px;
+            background-color: #FF4500;
+            border-radius: 40px;
+            position: relative;
+            border: 2px solid #FFD700;
+            animation: swing 3s ease-in-out infinite alternate;
+            transform-origin: top center;
+        }
+
+        @keyframes swing {
+            from { transform: rotate(-10deg); }
+            to { transform: rotate(10deg); }
+        }
+
+        .lantern::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background: #FFD700;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #AA0000;
+            padding: 30px;
+            border: 2px solid #FFD700;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        .chinese-char {
+            font-size: 5rem;
             margin: 20px 0;
+            display: block;
         }
 
-        @keyframes pulse {
-            0% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.1); opacity: 0.7; }
-            100% { transform: scale(1); opacity: 1; }
+        .grid-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
         }
 
-        .arabic {
-            animation: pulse 3s infinite ease-in-out;
+        .card {
+            background: #FFD700;
+            color: #8B0000;
+            padding: 20px;
+            width: 200px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #222;
+            color: #888;
+            font-size: 0.9rem;
         }
     </style>
 </head>
-<body>
-
-    <div class="container">
-        <div class="arabic">عيد مبارك</div>
-        
-        <h1>Selamat Hari Raya</h1>
-        <div class="subtitle">Idul Fitri 1447 Hijriah</div>
-
-        <div class="decoration">✦ ☪ ✦</div>
-
-        <div class="message">
-            <p>"Taqabbalallahu minna wa minkum, shiyamana wa shiyamakum."</p>
-            <p>Semoga Allah menerima amal ibadah kita dan menjadikan kita kembali dalam keadaan suci.</p>
-            <span class="highlight">Mohon Maaf Lahir & Batin</span>
-        </div>
-
-        <p style="margin-top: 40px; font-size: 0.8rem; opacity: 0.6;">
-            &copy; 2026 - Albareee
-        </p>
-    </div>
-
-</body>
-</html>
-```
+````
 
 ---
 
-## Hasil Tampilan
+# Hasil Tampilan
 
-![Hasil Tampilan HTML & CSS](assets/1.PNG)
+![Hasil Tampilan HTML & CSS](assets/1.png)
 
 ---
 
 # Penjelasan Kode
 
-## 1. Struktur Dokumen (HTML)
+## 1. Bagian CSS (Styling dan Visual)
 
-Kode menggunakan standar **HTML5** dengan beberapa elemen utama:
+Bagian di dalam tag `<style>` merupakan bagian yang mengatur tampilan halaman web.
 
-* **`<head>`**
-  Berisi metadata halaman, judul, serta import font dari Google Fonts.
+### Warna dan Tipografi
 
-* **`<div class="container">`**
-  Berfungsi sebagai pembungkus utama konten agar berada di tengah halaman.
+Pada kode ini digunakan kombinasi warna khas perayaan Imlek, yaitu:
 
-* **`<div class="arabic">`**
-  Menampilkan teks ucapan **Eid Mubarak** dalam bahasa Arab.
+* merah gelap `#8B0000` sebagai latar belakang
+* emas `#FFD700` sebagai warna teks
 
-* **`<h1>` dan `<div class="subtitle">`**
-  Digunakan untuk judul utama dan keterangan tahun Hijriah.
+Kombinasi warna ini memberikan kesan **meriah dan khas budaya Tiongkok**.
 
-* **`<div class="message">`**
-  Berisi doa dan ucapan Idul Fitri.
+### Animasi Lampion (`@keyframes swing`)
 
----
+Kode ini membuat animasi bernama **swing** yang digunakan untuk menggerakkan elemen lampion.
 
-## 2. Desain Visual (CSS Layout)
+Animasi tersebut membuat elemen berputar dari **-10 derajat ke 10 derajat** secara berulang (`infinite`). Akibatnya, lampion terlihat seperti **berayun tertiup angin**.
 
-Beberapa teknik CSS modern yang digunakan:
+### Flexbox (`display: flex`)
 
-### Flexbox
+Flexbox digunakan pada:
 
-Digunakan pada elemen `body`:
+* `.lantern-container`
+* `.grid-container`
 
-* `display: flex`
-* `justify-content: center`
-* `align-items: center`
+Properti ini membuat elemen tersusun secara **horizontal dan rapi**, serta memudahkan pengaturan jarak antar elemen.
 
-Agar konten berada tepat di **tengah layar** secara horizontal dan vertikal.
+### Efek Interaktif (`.card:hover`)
 
-### Background Gradient
+Saat kursor diarahkan ke elemen `.card`, elemen akan sedikit membesar menggunakan transformasi:
 
-Menggunakan:
+`transform: scale(1.1)`
 
-```
-linear-gradient(135deg, #1b4332, #081c15)
-```
-
-Memberikan efek **gradasi hijau elegan**.
-
-### Glassmorphism
-
-Efek kaca buram pada `.message` dibuat dengan:
-
-```
-background: rgba(255,255,255,0.1)
-backdrop-filter: blur(10px)
-```
+Efek ini membuat halaman menjadi **lebih interaktif bagi pengguna**.
 
 ---
 
-## 3. Tipografi & Responsivitas
+## 2. Struktur Konten (HTML)
 
-Beberapa teknik yang digunakan:
+Konten pada bagian `<body>` dibagi menjadi beberapa bagian utama.
 
-* **Google Fonts**
+### Lampion (`lantern-container`)
 
-  * Amiri (teks Arab)
-  * Poppins (teks utama)
+Bagian ini berisi **tiga lampion** yang dibuat menggunakan elemen `<div>`. Bentuk lampion dibuat menggunakan properti CSS `border-radius`.
 
-* **Fluid Typography**
-  Menggunakan fungsi:
+### Banner Utama
 
-```
-clamp()
-```
+Bagian ini menampilkan ucapan **“Gong Xi Fa Cai”** menggunakan tag `<h1>`. Properti `text-shadow` digunakan untuk memberikan bayangan pada teks agar lebih mudah dibaca.
 
-Agar ukuran font menyesuaikan ukuran layar.
+### Konten Utama (`content`)
 
-* **Text Shadow**
-  Memberikan bayangan pada teks Arab agar lebih kontras.
+Bagian ini berisi isi utama halaman.
 
----
+* `<span class="chinese-char">福</span>`
+  Menampilkan karakter Mandarin **“Fu”** yang berarti keberuntungan atau kebahagiaan.
 
-## 4. Animasi & Dekorasi
+* **Grid kartu**
+  Terdiri dari tiga kotak yang berisi doa dan harapan baik untuk tahun baru.
 
-### Keyframes Pulse
+### Footer
 
-Animasi dibuat menggunakan:
-
-```
-@keyframes pulse
-```
-
-Animasi ini mengubah:
-
-* `scale`
-* `opacity`
-
-sehingga teks terlihat **berdenyut secara halus**.
-
-Animasi diterapkan pada:
-
-```
-.arabic
-```
-
-dengan durasi **3 detik dan berjalan terus menerus**.
+Bagian paling bawah halaman yang berisi informasi hak cipta. Warna teks dibuat lebih redup agar tidak terlalu mencolok dibandingkan konten utama.
 
 ---
 
-## 5. Meta & Footer
+## 3. Catatan Kecil (Koreksi Lembut)
 
-* **Viewport Tag**
-  Agar tampilan responsif pada perangkat mobile.
+Pada bagian teks disebutkan **Tahun Kuda Api**.
 
-* **Footer**
-  Menggunakan opacity rendah (`0.6`) agar tidak mengganggu fokus utama halaman.
+Menurut siklus **zodiak Tiongkok**, tahun 2026 memang merupakan **Tahun Kuda Api (Fire Horse)**. Oleh karena itu, penulisan pada kode sudah sesuai secara astrologi.
 
 ---
 
 # Referensi
 
-* [Materi Modul 3](https://drive.google.com/file/d/1kd7ogQkR_rsNCnKDcJDmavY8FiOyTLzs/view?usp=sharing)
+* [Materi Modul 3](https://drive.google.com/file/d/1kd7ogQkR_rsNCnKDcJDmavY8FiOyTLzs/view?usp=sharing)D:\Sem6\Praktikum-ABP\modul3
