@@ -1,0 +1,161 @@
+body{
+margin:0;
+height:100vh;
+overflow:hidden;
+font-family:'Segoe UI',sans-serif;
+background:#0f0f14;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* glowing background */
+
+.glow{
+position:absolute;
+width:500px;
+height:500px;
+border-radius:50%;
+filter:blur(150px);
+opacity:0.5;
+}
+
+.glow1{
+background:#ff003c;
+top:-150px;
+left:-150px;
+}
+
+.glow2{
+background:#ffb300;
+bottom:-200px;
+right:-150px;
+}
+
+/* card modern */
+
+.card{
+
+width:420px;
+padding:40px;
+
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.1);
+
+text-align:center;
+
+box-shadow:
+0 0 30px rgba(255,0,0,0.3);
+}
+
+/* heading */
+
+h1{
+font-size:64px;
+margin:0;
+color:#ffd700;
+letter-spacing:4px;
+}
+
+h2{
+margin-top:10px;
+font-weight:300;
+color:#ff4d4d;
+}
+
+/* pesan */
+
+.message{
+margin-top:20px;
+line-height:1.6;
+color:#ddd;
+}
+
+/* divider */
+
+.divider{
+width:60%;
+height:1px;
+background:linear-gradient(to right,transparent,gold,transparent);
+margin:25px auto;
+}
+
+/* author */
+
+.author{
+font-size:14px;
+color:#bbb;
+}
+
+.author b{
+color:gold;
+font-size:18px;
+}
+
+/* lantern modern */
+
+.lantern{
+position:absolute;
+width:40px;
+height:60px;
+
+background:linear-gradient(#ff0000,#b30000);
+
+border-radius:50% 50% 40% 40%;
+
+box-shadow:
+0 0 20px red,
+0 0 40px red;
+
+animation:float 4s ease-in-out infinite;
+}
+
+.lantern::after{
+content:"";
+width:3px;
+height:30px;
+background:gold;
+position:absolute;
+bottom:-30px;
+left:50%;
+transform:translateX(-50%);
+}
+
+.l1{
+top:80px;
+left:10%;
+}
+
+.l2{
+top:60px;
+right:15%;
+animation-delay:1s;
+}
+
+.l3{
+top:120px;
+right:40%;
+animation-delay:2s;
+}
+
+/* animasi */
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
