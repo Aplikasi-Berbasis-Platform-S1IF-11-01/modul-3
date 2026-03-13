@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Segoe UI', sans-serif;
+
+    background: linear-gradient(135deg,
+            #5a0000,
+            #8b0000,
+            #b30000);
+
+    overflow: hidden;
+}
+
+/* kartu */
+
+.card {
+
+    text-align: center;
+
+    padding: 60px 70px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(180deg,
+            #c40000,
+            #a80000);
+
+    /* butter yellow */
+
+    border: 3px solid #F6E6A8;
+
+    box-shadow:
+        0 0 20px rgba(246, 230, 168, 0.5),
+        0 10px 30px rgba(0, 0, 0, 0.3);
+
+    color: white;
+
+    max-width: 500px;
+
+    position: relative;
+}
+
+/* icon */
+
+.icon {
+
+    font-size: 70px;
+
+    margin-bottom: 20px;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+/* judul */
+
+h1 {
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+
+    color: #F6E6A8;
+
+    text-shadow: 0 0 6px rgba(246, 230, 168, 0.7);
+}
+
+/* teks */
+
+p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #fff7d6;
+}
+
+/* lampion */
+
+.lantern {
+
+    position: absolute;
+
+    top: 60px;
+
+    width: 65px;
+    height: 65px;
+
+    background: radial-gradient(circle, #ff3b3b, #8b0000);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 15px red,
+        0 0 20px #F6E6A8;
+}
+
+.lantern::after {
+
+    content: "";
+
+    width: 4px;
+    height: 55px;
+
+    background: #F6E6A8;
+
+    position: absolute;
+
+    bottom: -55px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.left {
+    left: 120px;
+}
+
+.right {
+    right: 120px;
+}
+
+/* sparkle */
+
+.sparkle {
+
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    background: #F6E6A8;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px #F6E6A8;
+
+    animation: twinkle 2s infinite;
+}
+
+.s1 {
+    top: 20px;
+    left: 30px;
+}
+
+.s2 {
+    bottom: 30px;
+    right: 40px;
+    animation-delay: 1s;
+}
+
+/* animasi */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes twinkle {
+
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+
+}
