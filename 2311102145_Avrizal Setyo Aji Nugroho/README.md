@@ -2,7 +2,7 @@
   <br />
   <h1>LAPORAN PRAKTIKUM <br>APLIKASI BERBASIS PLATFORM</h1>
   <br />
-  <h3>MODUL  <br> CSS - CASCADING STYLE SHEET</h3>
+  <h3>MODUL 3 <br> CSS - CASCADING STYLE SHEET</h3>
   <br />
   <br />
   <img src="logo.jpeg" alt="Logo" width="300"> 
