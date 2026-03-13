@@ -52,7 +52,7 @@ Dalam penerapannya, ada tiga cara utama untuk menyisipkan CSS ke dalam dokumen H
 
 Berikut ini adalah implementasi tabel berdasarkan struktur dasar HTML murni beserta hasil tampilannya.
 
-### Kode HTML (`table.html`)
+### Kode HTML (`Tugas3.html`)
 
 ```html
 <!DOCTYPE html>
