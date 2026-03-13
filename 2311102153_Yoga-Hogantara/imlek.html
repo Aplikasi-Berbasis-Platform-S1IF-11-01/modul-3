@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新年快乐</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #aa0000; 
+            color: #ffd700; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+            position: relative; 
+        }
+
+        .container {
+            border: 5px solid #ffd700;
+            padding: 50px;
+            border-radius: 20px;
+            background-color: #8b0000;
+            box-shadow: 0 0 20px #ffd700;
+            animation: glow 2s infinite alternate;
+            position: relative; 
+            z-index: 1; 
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        p {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ffebcd;
+        }
+
+        .lantern {
+            font-size: 60px;
+            display: inline-block;
+            margin: 0 20px;
+            animation: swing 2s infinite ease-in-out alternate;
+            transform-origin: top center;
+        }
+
+        .firework {
+            position: absolute;
+            width: 20px; 
+            height: 20px;
+            background-color: #ffd700; 
+            border-radius: 70%; 
+            box-shadow: 0 0 10px #ffd700; 
+            opacity: 0;
+            pointer-events: none; 
+        }
+
+        @keyframes fireworkBurst {
+            0% { transform: scale(0); opacity: 0; }
+            15% { transform: scale(1); opacity: 1; }
+            75% { transform: scale(1.5); opacity: 1; }
+            100% { transform: scale(25); opacity: 0; } 
+        }
+
+        .fw1 {
+            top: 20px; left: 20px;
+            animation: fireworkBurst 3s infinite ease-out;
+        }
+        .fw2 {
+            top: 30px; right: 30px;
+            animation: fireworkBurst 3.5s infinite ease-out;
+            animation-delay: 1.5s;
+        }
+        .fw3 {
+            bottom: 20px; right: 20px;
+            animation: fireworkBurst 3.2s infinite ease-out;
+            animation-delay: 0.8s;
+        }
+        .fw4 {
+            bottom: 30px; left: 30px;
+            animation: fireworkBurst 3.8s infinite ease-out;
+            animation-delay: 2.2s;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 10px #ffd700; }
+            to { box-shadow: 0 0 40px #ffd700, 0 0 15px #ff0000 inset; }
+        }
+
+        @keyframes swing {
+            from { transform: rotate(-15deg); }
+            to { transform: rotate(15deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="firework fw1"></div>
+        <div class="firework fw2"></div>
+        <div class="firework fw3"></div>
+        <div class="firework fw4"></div>
+
+        <div class="lantern">🏮</div>
+        <div class="lantern">🏮</div>
+        <h1>Gong Xi Fa Cai</h1>
+        <p>新年快乐!</p>
+        <p style="font-size: 1.2em; font-weight: normal;">Yoga Hogantara-2311102153</p>
+    </div>
+</body>
+</html>
