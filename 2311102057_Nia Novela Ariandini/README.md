@@ -2,7 +2,7 @@
   <br />
   <h1>LAPORAN PRAKTIKUM <br>APLIKASI BERBASIS PLATFORM</h1>
   <br />
-  <h3>MODUL 3 <br> GIT</h3>
+  <h3>MODUL 3 <br> CSS - CASCADING STYLE SHEET</h3>
   <br />
   <img src="assets/logo.png" alt="Logo" width="300"> 
   <br />
