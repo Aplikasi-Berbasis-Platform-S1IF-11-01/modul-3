@@ -56,8 +56,6 @@ Pada praktikum ini, digunakan **External CSS** agar tampilan halaman lebih teror
 
 ## 2. Penjelasan Kode HTML dan CSS
 
-Berikut ini adalah implementasi halaman website ucapan Hari Raya Imlek yang dibuat menggunakan HTML sebagai struktur utama dan CSS eksternal sebagai pengatur tampilannya.
-
 ### Kode HTML (`imlek.html`)
 
 ```html
