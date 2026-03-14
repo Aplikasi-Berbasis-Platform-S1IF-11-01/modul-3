@@ -50,8 +50,6 @@ Pengaturan perataan teks atau **alignment of text** juga dapat dilakukan menggun
 Dalam desain antarmuka web, warna merupakan salah satu unsur yang sangat penting karena berpengaruh terhadap daya tarik visual dan identitas tampilan halaman. CSS menyediakan pengaturan warna yang lebih lengkap dibandingkan atribut HTML biasa. Properti `background-color` digunakan untuk mengatur warna latar belakang elemen HTML, sedangkan properti `color` digunakan untuk mengatur warna teks. Nilai warna dalam CSS dapat dituliskan dalam beberapa format, seperti **color names**, **RGB**, **Hex**, **HSL**, **RGBA**, dan **HSLA**, sehingga pengembang memiliki fleksibilitas yang lebih besar dalam menentukan kombinasi warna yang sesuai. 
 Selain pengaturan warna dan teks, CSS juga sering digunakan bersama elemen `span` dan `div` dalam HTML. Elemen `span` digunakan untuk menangani perubahan style pada bagian kecil teks dalam satu baris, sedangkan `div` digunakan untuk membuat section atau blok yang menampung beberapa elemen HTML di dalamnya. Dengan kombinasi HTML dan CSS, `div` dapat digunakan sebagai wadah layout, sedangkan `span` dapat dipakai untuk memberi penekanan atau gaya khusus pada bagian teks tertentu.  
 
-Berdasarkan uraian tersebut, dapat dipahami bahwa CSS memiliki peran penting dalam pengembangan halaman web karena mampu mengatur tampilan elemen HTML secara lebih fleksibel, rapi, dan menarik. Dengan memahami konsep dasar seperti cara penyisipan CSS, selector, font properties, list properties, alignment text, colors, serta penggunaan `span` dan `div`, mahasiswa dapat membuat antarmuka web yang lebih baik dan sesuai dengan kebutuhan desain.
-
 ---
 
 ## 2. Penjelasan Kode HTML dan CSS 
