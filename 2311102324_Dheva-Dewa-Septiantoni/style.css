@@ -1,0 +1,106 @@
+/* Reset dan Base */
+body {
+    background-color: #a50000; /* Merah Khas Imlek */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Container Kartu */
+.card {
+    background-color: #bd0000;
+    padding: 50px;
+    border: 8px double #ffd700; /* Border Emas Ganda */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 215, 0, 0.2);
+    position: relative;
+    max-width: 80%;
+}
+
+/* Efek Teks Berkilau */
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    background: linear-gradient(45deg, #ffd700, #fff, #ffd700, #fff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+    font-family: serif;
+}
+
+.greeting {
+    color: #ffd700;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.message {
+    color: #fff;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.gold-text {
+    color: #ffd700;
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Dekorasi Lampion */
+.lampion-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lampion {
+    width: 50px;
+    height: 45px;
+    background: #ff0000;
+    border: 2px solid #ffd700;
+    border-radius: 40%;
+    position: relative;
+    animation: swing 3s ease-in-out infinite alternate;
+    transform-origin: top center;
+}
+
+.lampion::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 2px;
+    height: 10px;
+    background: #ffd700;
+}
+
+.lampion::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 4px;
+    height: 10px;
+    background: #ffd700;
+}
+
+/* Animasi */
+@keyframes shine {
+    to { background-position: 200% center; }
+}
+
+@keyframes swing {
+    from { transform: rotate(-15deg); }
+    to { transform: rotate(15deg); }
+}
