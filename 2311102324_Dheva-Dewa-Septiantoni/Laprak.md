@@ -218,7 +218,6 @@ shine: Sebuah class khusus yang diterapkan pada tag `<h1>` untuk memberikan efek
 
 2. Logika Desain CSS (style.css)
 Desain ini berfokus pada penggunaan Flexbox dan CSS Animation untuk menghidupkan suasana halaman.<br>
-<br>
 A. Layouting (Flexbox)
 CSS<br>
 `display: flex`;<br>
@@ -226,13 +225,11 @@ CSS<br>
 `align-items: center;`<br>
 `height: 100vh;`<br>
 Bagian ini memastikan seluruh konten berada tepat di tengah layar (baik secara horizontal maupun vertikal) di semua ukuran layar browser.<br>
-<br>
 B. Teknik Animasi<br>
 Lampion Swing `@keyframes swing`:<br>
 Menggunakan properti transform: `rotate()`. Dengan memberikan `transform-origin: top center`, lampion seolah-olah tergantung pada sebuah tali dan berayun ke kiri dan kanan secara terus-menerus menggunakan fungsi infinite alternate.<br>
 Gold Shine Effect `@keyframes shine`:<br>
 Efek ini dibuat dengan menumpuk gradasi warna emas (linear-gradient) pada teks, lalu menggerakkan posisi latar belakang tersebut `(background-position)` secara berulang sehingga teks terlihat mengkilap seperti logam.<br>
-<br>
 C. Styling Visual
 Double Border: Penggunaan `border: 8px double #ffd700` memberikan kesan bingkai klasik yang identik dengan kartu ucapan Tionghoa tradisional.<br>
 Shadowing: Penggunaan `box-shadow` memberikan efek kedalaman (depth) agar kartu ucapan terlihat "melayang" di atas latar belakang merah.
