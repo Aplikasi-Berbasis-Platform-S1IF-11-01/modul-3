@@ -218,6 +218,7 @@ shine: Sebuah class khusus yang diterapkan pada tag `<h1>` untuk memberikan efek
 
 2. Logika Desain CSS (style.css)
 Desain ini berfokus pada penggunaan Flexbox dan CSS Animation untuk menghidupkan suasana halaman.<br>
+<br>
 A. Layouting (Flexbox)
 CSS<br>
 `display: flex`;<br>
