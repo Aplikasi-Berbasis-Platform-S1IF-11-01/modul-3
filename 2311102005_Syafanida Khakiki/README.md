@@ -132,27 +132,28 @@ Halaman dibuat menggunakan struktur dasar HTML dan styling menggunakan CSS yang 
 </body>
 
 </html>
+```
 
 # 3. Tampilan Hasil
 Berikut tampilan halaman web di browser:
-![Tampilan](assets/hasil.png)
+<img src="assets/hasil.png" width="900">
 
 ### Penjelasan Code
-<!DOCTYPE html>
-Menentukan bahwa dokumen menggunakan standar HTML5.
-<html>
-Elemen utama yang membungkus seluruh isi halaman web.
-<head>
-Berisi informasi halaman seperti judul halaman dan kode CSS.
-<title>
-Menampilkan judul halaman pada tab browser.
-<style>
-Digunakan untuk menuliskan kode CSS yang mengatur tampilan halaman.
-<body>
-Berisi seluruh konten yang ditampilkan di halaman web.
-<div>
-Digunakan untuk mengelompokkan elemen dalam halaman seperti bagian lampion, kartu ucapan, dan dekorasi.
-<h1> dan <p>
-Digunakan untuk menampilkan judul dan teks pada halaman.
-Class CSS (.lampion, .card, .symbol, .decor)
+`<!DOCTYPE html>`
+Menentukan bahwa dokumen menggunakan standar HTML5. <br>
+`<html>`
+Elemen utama yang membungkus seluruh isi halaman web.<br>
+`<head>`
+Berisi informasi halaman seperti judul halaman dan kode CSS.<br>
+`<title>`
+Menampilkan judul halaman pada tab browser.<br>
+`<style>`
+Digunakan untuk menuliskan kode CSS yang mengatur tampilan halaman.<br>
+`<body>`
+Berisi seluruh konten yang ditampilkan di halaman web.<br>
+`<div>`
+Digunakan untuk mengelompokkan elemen dalam halaman seperti bagian lampion, kartu ucapan, dan dekorasi.<br>
+`<h1>` dan `<p>`
+Digunakan untuk menampilkan judul dan teks pada halaman.<br>
+Class CSS `(.lampion, .card, .symbol, .decor)`
 Digunakan untuk memberikan style pada elemen tertentu agar tampilan lebih teratur.
