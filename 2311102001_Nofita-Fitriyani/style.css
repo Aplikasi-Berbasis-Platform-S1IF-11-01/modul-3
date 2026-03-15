@@ -1,0 +1,32 @@
+body{
+    background-color:#5a0000;
+    color:#d4af37;
+    font-family: Arial, sans-serif;
+    text-align:center;
+}
+
+.container{
+    margin-top:120px;
+}
+
+h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+h2{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+h3{
+    width:500px;
+    margin:auto;
+    font-weight:normal;
+    line-height:1.6;
+}
+
+img{
+    width:450px;
+    margin:40px 0;
+}
