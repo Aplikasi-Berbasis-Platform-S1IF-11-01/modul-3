@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Tahun Baru Imlek</title>
+    <style>
+        body {
+            background: #8b0000; 
+            color: #ffd700;      
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        /* Abda Firas Rahman-2311102049-IF-11-REG01 */
+
+        .kartu {
+            border: 8px double #ffd700;
+            padding: 40px 20px;
+            text-align: center;
+            width: 380px;
+            background: #a00000;
+            box-shadow: 15px 15px 0px #500000; 
+            border-radius: 10px;
+        }
+
+        /* Angpao CSS */
+        .angpao {
+            width: 60px;
+            height: 80px;
+            background: #d40000;
+            margin: 0 auto 20px;
+            position: relative;
+            border-radius: 5px;
+            border: 2px solid #ffd700;
+            overflow: hidden; /* biar lipatannya gak keluar */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Lipatan Atas Angpao */
+        .angpao::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            background: #b30000;
+            border-bottom: 2px solid #ffd700;
+            border-radius: 5px 5px 50% 50%; /* Bikin efek melengkung */
+            z-index: 2;
+        }
+
+        .kancing {
+            width: 15px;
+            height: 15px;
+            background: #ffd700;
+            border-radius: 50%;
+            position: absolute;
+            top: 22px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            border: 1px solid #b8860b;
+            box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 25px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: white;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .nama-nim {
+            font-size: 12px;
+            border-top: 1px solid rgba(255, 215, 0, 0.3);
+            padding-top: 15px;
+            font-style: italic;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="kartu">
+        <div class="angpao">
+            <div class="kancing"></div>
+        </div>
+
+        <h1>Gong Xi Fa Cai!</h1>
+        <p>
+            Selamat Tahun Baru Imlek <br>
+            Semoga banyak keberuntungan dan kebaikan di tahun ini <br>
+            <strong>Infokan Angpao Bosquhh</strong> 
+        </p>
+
+        <div class="nama-nim">
+            By: Abda Firas Rahman - 2311102049
+        </div>
+    </div>
+
+</body>
+</html>

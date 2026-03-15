@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC&display=swap');
+
+:root {
+  --gold: #f5c518;
+  --gold-light: #ffe87c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(ellipse at top, #8b0000, #3d0000 50%, #0f0000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Serif SC', serif;
+  color: var(--gold);
+}
+
+/* ── Lanterns ── */
+.lantern {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: top center;
+  animation: swing 4s ease-in-out infinite;
+}
+
+.lantern-string {
+  width: 2px;
+  height: 40px;
+  background: var(--gold);
+}
+
+.lantern-body {
+  width: 50px;
+  height: 75px;
+  background: radial-gradient(ellipse at 40% 35%, #ff4444, #aa0000 60%, #600000);
+  border-radius: 50% / 40%;
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 20px rgba(255, 80, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 26px;
+  color: var(--gold-light);
+  text-shadow: 0 0 8px var(--gold);
+}
+
+.lantern-tassel {
+  width: 2px;
+  height: 25px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+}
+
+.l1 { left: 10%; animation-delay: 0s; }
+.l2 { left: 25%; animation-delay: 0.8s; }
+.l3 { right: 25%; animation-delay: 0.4s; }
+.l4 { right: 10%; animation-delay: 1.2s; }
+
+@keyframes swing {
+  0%, 100% { transform: rotate(-10deg); }
+  50%       { transform: rotate( 10deg); }
+}
+
+/* ── Falling angpao ── */
+.angpao {
+  position: fixed;
+  top: -70px;
+  width: 42px;
+  height: 58px;
+  background: linear-gradient(135deg, #e00020, #8a0010);
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 22px;
+  color: var(--gold);
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0%   { transform: translateY(0) rotate(-10deg); opacity: 0; }
+  10%  { opacity: 1; }
+  100% { transform: translateY(110vh) rotate(20deg); opacity: 0.7; }
+}
+
+.a1 { left:  5%; animation-duration: 7s; animation-delay: 0.0s; }
+.a2 { left: 18%; animation-duration: 9s; animation-delay: 1.5s; }
+.a3 { left: 32%; animation-duration: 6s; animation-delay: 3.0s; }
+.a4 { left: 50%; animation-duration: 8s; animation-delay: 0.5s; }
+.a5 { left: 65%; animation-duration: 7s; animation-delay: 2.0s; }
+.a6 { left: 80%; animation-duration: 9s; animation-delay: 1.0s; }
+.a7 { left: 93%; animation-duration: 6s; animation-delay: 4.0s; }
+
+/* ── Centre content ── */
+.stage {
+  text-align: center;
+  z-index: 5;
+  padding: 40px 50px;
+}
+
+.year-badge {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: rgba(245, 197, 24, 0.6);
+  border: 1px solid rgba(245, 197, 24, 0.25);
+  padding: 3px 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.main-title {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 72px;
+  color: var(--gold-light);
+  animation: glow 3s ease-in-out infinite alternate;
+  letter-spacing: 4px;
+}
+
+.cjk-title {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 44px;
+  letter-spacing: 10px;
+  opacity: 0.8;
+  margin-top: 6px;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 15px rgba(255,180,0,0.6), 0 0 40px rgba(255,80,0,0.3); }
+  to   { text-shadow: 0 0 30px rgba(255,220,0,1),   0 0 80px rgba(255,60,0,0.6); }
+}
+
+.divider {
+  width: 160px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 20px auto;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #fff8e7;
+  opacity: 0.7;
+  line-height: 1.9;
+}
+
+.blessings {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.blessing-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.blessing-char {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 34px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.blessing-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.b1 .blessing-char { animation-delay: 0.0s; }
+.b2 .blessing-char { animation-delay: 0.4s; }
+.b3 .blessing-char { animation-delay: 0.8s; }
+.b4 .blessing-char { animation-delay: 1.2s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+@media (max-width: 600px) {
+  .main-title { font-size: 46px; }
+  .cjk-title  { font-size: 28px; }
+  .stage      { padding: 30px 20px; }
+}

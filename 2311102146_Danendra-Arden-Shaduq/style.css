@@ -1,0 +1,120 @@
+:root {
+    --red: #d32f2f;
+    --gold: #ffd700;
+    --dark-red: #4a0000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-red);
+    font-family: 'Georgia', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    color: var(--gold);
+}
+
+@keyframes firework {
+    0% { transform: translate(-50%, 60vh); width: 4px; opacity: 1; }
+    50% { width: 4px; opacity: 1; }
+    100% { width: 500px; opacity: 0; }
+}
+
+.firework,
+.firework::before,
+.firework::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    aspect-ratio: 1;
+    background: 
+        radial-gradient(circle, var(--gold) 0.2rem, transparent 0) 50% 0%,
+        radial-gradient(circle, var(--gold) 0.3rem, transparent 0) 100% 50%,
+        radial-gradient(circle, var(--gold) 0.5rem, transparent 0) 50% 100%,
+        radial-gradient(circle, var(--gold) 0.2rem, transparent 0) 0% 50%,
+        radial-gradient(circle, var(--gold) 0.3rem, transparent 0) 80% 80%,
+        radial-gradient(circle, var(--gold) 0.2rem, transparent 0) 20% 20%,
+        radial-gradient(circle, var(--gold) 0.3rem, transparent 0) 80% 20%,
+        radial-gradient(circle, var(--gold) 0.2rem, transparent 0) 20% 80%;
+    background-size: 0.5rem 0.5rem;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    animation: firework 2s infinite;
+}
+
+.firework:nth-child(2) { left: 20%; top: 30%; animation-delay: -0.5s; }
+.firework:nth-child(3) { left: 80%; top: 40%; animation-delay: -1.2s; }
+
+/* --- Lampion --- */
+.lantern-container {
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.lantern {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    background-color: var(--red);
+    border-radius: 50% / 20%;
+    border: 2px solid var(--gold);
+    animation: swing 3s ease-in-out infinite alternate;
+    transform-origin: top center;
+}
+
+.lantern::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 2px;
+    height: 15px;
+    background: var(--gold);
+    box-shadow: 0 5px 10px var(--gold);
+}
+
+@keyframes swing {
+    from { transform: rotate(-12deg); }
+    to { transform: rotate(12deg); }
+}
+
+.content {
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.chinese-text {
+    font-size: 6rem;
+    display: block;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 10px var(--gold));
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.footer-pattern {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: repeating-linear-gradient(45deg, var(--gold), var(--gold) 10px, transparent 10px, transparent 20px);
+    opacity: 0.2;
+}
