@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar Elegance for Bubub</title>
+    <style>
+        /* --- CSS SETUP --- */
+        :root {
+            --bg-color: #4a0000;
+            --card-bg: #5c0000;
+            --gold: #d4af37;
+            --gold-light: #f9e297;
+            --text-white: #fdfdfd;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #630000 0%, #2b0000 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Georgia', serif;
+            color: var(--gold);
+            overflow: hidden;
+        }
+
+        /* --- BACKGROUND ANIMATION (PURE CSS) --- */
+        .petal {
+            position: absolute;
+            background-color: #ffc0cb;
+            border-radius: 150% 0 150% 0;
+            opacity: 0.3;
+            top: -10%;
+            animation: drift linear infinite;
+        }
+
+        @keyframes drift {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.4; }
+            90% { opacity: 0.4; }
+            100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+        }
+
+        /* Kelopak dengan variasi posisi & durasi manual (Tanpa JS) */
+        .p1 { left: 10%; width: 10px; height: 12px; animation-duration: 7s; }
+        .p2 { left: 30%; width: 15px; height: 18px; animation-duration: 10s; animation-delay: 2s; }
+        .p3 { left: 55%; width: 8px; height: 10px; animation-duration: 8s; animation-delay: 4s; }
+        .p4 { left: 80%; width: 12px; height: 14px; animation-duration: 12s; animation-delay: 1s; }
+
+        /* --- MAIN CARD --- */
+        .elegant-card {
+            position: relative;
+            width: 400px;
+            padding: 60px 40px;
+            background: var(--card-bg);
+            border: 1px solid var(--gold);
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+            z-index: 5;
+        }
+
+        /* Border Dalam Ganda */
+        .elegant-card::before {
+            content: "";
+            position: absolute;
+            top: 15px;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+            border: 1px solid var(--gold);
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .mandarin-title {
+            font-size: 3.5rem;
+            font-weight: normal;
+            margin-bottom: 20px;
+            letter-spacing: 10px;
+            display: block;
+            background: linear-gradient(to bottom, var(--gold-light), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 40px;
+            color: var(--gold-light);
+        }
+
+        .message {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-white);
+            font-style: italic;
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 25px 0;
+            margin-bottom: 30px;
+        }
+
+        .gold-seal {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            border: 2px solid var(--gold);
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gold-seal span {
+            transform: rotate(-45deg);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            opacity: 0.6;
+            text-transform: uppercase;
+        }
+
+        /* Simpul Tali (CSS Art) */
+        .knot {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--gold);
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="petal p1"></div>
+    <div class="petal p2"></div>
+    <div class="petal p3"></div>
+    <div class="petal p4"></div>
+
+    <div class="elegant-card">
+        <div class="knot">◈</div>
+        
+        <span class="mandarin-title">新年快乐</span>
+        <h1>Happy Lunar New Year</h1>
+
+        <div class="message">
+            "Semoga kemakmuran dan kedamaian menyelimuti langkahmu di tahun yang baru ini. Selamat merayakan Imlek, Bubub tersayang. Terima kasih telah menjadi cahaya yang paling indah."
+        </div>
+
+        <div class="gold-seal">
+            <span>福</span>
+        </div>
+
+        <div class="footer">
+            2026 — Year of the Horse
+        </div>
+    </div>
+
+</body>
+</html>
