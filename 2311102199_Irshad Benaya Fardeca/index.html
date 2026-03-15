@@ -1,0 +1,145 @@
+<!-- Irshad Benaya Fardeca -->
+<!-- 2311102199 -->
+<!-- S1IF-11-01 -->
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3</title>
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #7d0000;
+            background-image:
+                radial-gradient(circle at 20% 20%, rgba(255, 215, 0, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 80% 80%, rgba(255, 215, 0, 0.05) 0%, transparent 20%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Times New Roman', serif;
+            color: #ffd700;
+        }
+
+        /* FRAME LUAR */
+        .outer-border {
+            border: 2px solid #ffd700;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        /* CONTAINER UTAMA */
+        .card {
+            background-color: #900000;
+            border: 4px solid #ffd700;
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* ORNAMEN POJOK */
+        .corner {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 3px solid #ffd700;
+        }
+
+        .top-left {
+            top: -5px;
+            left: -5px;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .top-right {
+            top: -5px;
+            right: -5px;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        .bottom-left {
+            bottom: -5px;
+            left: -5px;
+            border-right: none;
+            border-top: none;
+        }
+
+        .bottom-right {
+            bottom: -5px;
+            right: -5px;
+            border-left: none;
+            border-top: none;
+        }
+
+        /* KONTEN */
+        .calligraphy {
+            font-size: 80px;
+            line-height: 1;
+            margin-bottom: 20px;
+            display: block;
+            color: #ffd700;
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #ffd700, transparent);
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #ffebcd;
+            /* Warna krem agar nyaman dibaca */
+        }
+
+        .footer-text {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            font-style: italic;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outer-border">
+        <div class="corner top-left"></div>
+        <div class="corner top-right"></div>
+        <div class="corner bottom-left"></div>
+        <div class="corner bottom-right"></div>
+
+        <div class="card">
+            <span class="calligraphy">新年</span>
+            <h1>Gong Xi Fa Cai</h1>
+            <div class="divider"></div>
+            <p>Happy Lunar New Year.</p>
+            <p>Semoga tahun ini penuh keberuntungan, kesehatan, dan kebahagiaan.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
