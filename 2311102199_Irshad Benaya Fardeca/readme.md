@@ -444,5 +444,7 @@ membuat section untuk beberapa elemen HTML di dalamnya. Tag yang digunakan yaitu
 </html>
 ```
 
+Menggunakan HTML dan CSS untuk membuat halaman web sederhana berupa kartu ucapan Tahun Baru Imlek. CSS digunakan untuk mengatur tampilan halaman, seperti menempatkan kartu di tengah menggunakan Flexbox, memberikan background merah dengan efek dekoratif, serta membuat bingkai dan ornamen sudut. Di dalam kartu terdapat teks kaligrafi “新年”, judul “Gong Xi Fa Cai” dan pesan ucapan Tahun Baru.
+
 #### Output:
 <img src="asset/output.png"/>
