@@ -350,7 +350,7 @@ font-size:1.5rem;
 ### Hasil Tampilan (Screenshot)
 
 ![Hasil Tampilan HTML & CSS](assets/1.png)
-(assets/2.png)
+![page 2](assets/2.png)
 ### Penjelasan Code
 
 #### 1. HTML
