@@ -297,7 +297,9 @@ membuat section untuk beberapa elemen HTML di dalamnya. Tag yang digunakan yaitu
 
 #### Source Code
 ```html
-Irshad Benaya Fardeca
+<!-- Irshad Benaya Fardeca -->
+<!-- 2311102199 -->
+<!-- S1IF-11-01 -->
 
 <!DOCTYPE html>
 <html lang="id">
