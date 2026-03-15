@@ -2,7 +2,7 @@
   <h3>LAPORAN PRAKTIKUM<br>APLIKASI BERBASIS PLATFORM</h3>
   <h>
   <br>
-  <h3>MODUL 2<br>HTML</h3>
+  <h3>MODUL 3<br>HTML & CSS</h3>
   <br>
   <img src="assets/logotelu.png" alt="Logo Telkom" width="200">
   <br>
