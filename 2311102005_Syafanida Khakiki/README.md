@@ -135,7 +135,7 @@ Halaman dibuat menggunakan struktur dasar HTML dan styling menggunakan CSS yang 
 
 # 3. Tampilan Hasil
 Berikut tampilan halaman web di browser:
-<img src="assets/hasil.png" width="1000">
+![Tampilan](assets/hasil.png)
 
 ### Penjelasan Code
 <!DOCTYPE html>
