@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Happy Chinese New Year</title>
+
+    <style>
+        body {
+            background: linear-gradient(180deg, #8B0000, #B22222, #FF0000);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: Arial;
+            color: gold;
+            text-align: center;
+        }
+
+        /* Judul */
+
+        h1 {
+            font-size: 60px;
+            text-shadow: 0 0 10px gold, 0 0 20px gold;
+        }
+
+        /* Subtext */
+
+        p {
+            font-size: 24px;
+        }
+
+        /* Lampion */
+
+        .lampion {
+            width: 80px;
+            height: 80px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 100px;
+            animation: goyang 3s infinite alternate;
+            box-shadow: 0 0 20px gold;
+        }
+
+        .lampion::after {
+            content: "";
+            width: 4px;
+            height: 60px;
+            background: gold;
+            position: absolute;
+            bottom: -60px;
+            left: 38px;
+        }
+
+        .lampion1 {
+            left: 20%;
+        }
+
+        .lampion2 {
+            right: 20%;
+        }
+
+        @keyframes goyang {
+            from {
+                transform: rotate(-10deg);
+            }
+
+            to {
+                transform: rotate(10deg);
+            }
+        }
+
+        /* Confetti emas */
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: gold;
+            top: -10px;
+            animation: jatuh 5s linear infinite;
+        }
+
+        @keyframes jatuh {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="lampion lampion1"></div>
+    <div class="lampion lampion2"></div>
+
+    <h1>🧧 Happy Chinese New Year 🧧</h1>
+    <p>Gong Xi Fa Cai</p>
+    <p>Semoga tahun ini membawa keberuntungan, kesehatan, dan rezeki berlimpah!</p>
+
+    <div class="confetti" style="left:10%"></div>
+    <div class="confetti" style="left:30%"></div>
+    <div class="confetti" style="left:50%"></div>
+    <div class="confetti" style="left:70%"></div>
+    <div class="confetti" style="left:90%"></div>
+
+</body>
+
+</html>
